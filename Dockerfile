@@ -9,7 +9,7 @@ RUN echo 'deb http://archive.ubuntu.com/ubuntu trusty multiverse' >> /etc/apt/so
 RUN ./opencv_latest.sh
 
 # Python environment
-# RUN echo 'export PYTHONPATH=${PYTHONPATH:/usr/local/lib/python2.7/site-packages}' > /app/.profile.d/opencv.sh
+RUN echo 'export PYTHONPATH=${PYTHONPATH:/usr/local/lib/python2.7/site-packages}' >> /etc/environment
 
 ONBUILD WORKDIR /usr/src/app
 ONBUILD ADD requirements.txt /usr/src/app
