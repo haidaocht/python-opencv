@@ -11,3 +11,4 @@ RUN rm -rf /usr/src/app/get-pip.py
  
 RUN pip install cv2
 RUN pip install numpy
+RUN pip install pillow
