@@ -1,4 +1,4 @@
-FROM python:2-slim
+FROM ubuntu
 
 RUN echo 'deb http://archive.ubuntu.com/ubuntu trusty multiverse' >> /etc/apt/sources.list && apt-get update
 
