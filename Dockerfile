@@ -1,4 +1,4 @@
-FROM python:2-slim
+FROM ubuntu
 
 RUN apt-get install -y --force-yes gcc wget python-dev python-opencv libjpeg-dev zlibc libwebp-dev libtiff-dev
 
