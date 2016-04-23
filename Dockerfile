@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:xenial
 
 RUN echo 'deb http://archive.ubuntu.com/ubuntu trusty multiverse' >> /etc/apt/sources.list && apt-get update
 
