@@ -8,7 +8,7 @@ RUN apt-get install -y --force-yes gcc wget python-dev python-opencv libjpeg-dev
 RUN wget -P /usr/src/app https://bootstrap.pypa.io/get-pip.py
 RUN python /usr/src/app/get-pip.py
 RUN rm -rf /usr/src/app/get-pip.py
- 
+
+RUN pip install numpy pyopenssl ndg-httpsclient pyasn1 
 RUN pip install cv2
-RUN pip install numpy
 RUN pip install pillow
