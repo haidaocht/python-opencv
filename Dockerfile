@@ -3,7 +3,7 @@ FROM ubuntu:14.04
 RUN echo 'deb http://archive.ubuntu.com/ubuntu trusty multiverse' >> /etc/apt/sources.list && apt-get update
 
 WORKDIR /usr/src/app
-RUN apt-get install -y --force-yes gcc wget python-dev libjpeg-dev zlibc libwebp-dev libtiff-dev libssl-dev
+RUN apt-get install -y --force-yes gcc wget python-dev libjpeg-dev zlibc libwebp-dev libtiff-dev libssl-dev libffi-dev
 RUN apt-get install -y --force-yes libopencv-dev python-opencv
 RUN apt-get install -y --force-yes python-pip
 
